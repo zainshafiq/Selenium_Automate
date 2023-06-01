@@ -15,29 +15,15 @@ time.sleep(5)
 
 browser.find_element(By.XPATH, '//*[@id="START"]').click()
 
-time.sleep(3)
+time.sleep(2)
 
 # browser.find_element(By.XPATH, '//*[@id="Wordloader"]')
 
-for x in range(9):
-    browser.find_element(By.XPATH, '//*[@id="N"]').click()
+for y in range (10):
+    for x in range(9):
+        browser.find_element(By.XPATH, '//*[@id="N"]').click()
 
-browser.find_element(By.XPATH, '//*[@id="Y"]').click()
-
-for x in range(9):
-    browser.find_element(By.XPATH, '//*[@id="N"]').click()
-
-browser.find_element(By.XPATH, '//*[@id="Y"]').click()
-
-for x in range(9):
-    browser.find_element(By.XPATH, '//*[@id="N"]').click()
-
-browser.find_element(By.XPATH, '//*[@id="Y"]').click()
-
-for x in range(9):
-    browser.find_element(By.XPATH, '//*[@id="N"]').click()
-
-browser.find_element(By.XPATH, '//*[@id="Y"]').click()
+    browser.find_element(By.XPATH, '//*[@id="Y"]').click()
 
 time.sleep(15)
 
