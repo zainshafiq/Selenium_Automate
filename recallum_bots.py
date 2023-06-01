@@ -11,11 +11,11 @@ browser.maximize_window()
 browser.get('https://recallum.reka.re/')
 
 # waiting for 3 seconds (for pages to load up)
-time.sleep(5)
+time.sleep(2)
 
 browser.find_element(By.XPATH, '//*[@id="START"]').click()
 
-time.sleep(2)
+time.sleep(1)
 
 # browser.find_element(By.XPATH, '//*[@id="Wordloader"]')
 
@@ -24,6 +24,8 @@ for y in range (10):
         browser.find_element(By.XPATH, '//*[@id="N"]').click()
 
     browser.find_element(By.XPATH, '//*[@id="Y"]').click()
+
+    time.sleep(0.25)
 
 time.sleep(15)
 
