@@ -15,7 +15,7 @@ time.sleep(3)
 
 browser.find_element(By.XPATH, '//*[@id="START"]').click()
 
-time.sleep(1)
+time.sleep(2)
 
 # browser.find_element(By.XPATH, '//*[@id="Wordloader"]')
 
