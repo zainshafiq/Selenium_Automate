@@ -6,7 +6,7 @@ import time
 # current chromedriver vers : 114
 browser = webdriver.Chrome()
 
-# browser.maximize_window()
+browser.maximize_window()
 
 browser.get('https://recallum.reka.re/')
 
