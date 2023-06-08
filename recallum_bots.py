@@ -11,7 +11,7 @@ browser.maximize_window()
 browser.get('https://recallum.reka.re/')
 
 # waiting for 3 seconds (for pages to load up)
-time.sleep(3)
+time.sleep(10)
 
 browser.find_element(By.XPATH, '//*[@id="START"]').click()
 
