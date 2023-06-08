@@ -15,7 +15,7 @@ time.sleep(10)
 
 browser.find_element(By.XPATH, '//*[@id="START"]').click()
 
-time.sleep(3)
+time.sleep(5)
 
 # browser.find_element(By.XPATH, '//*[@id="Wordloader"]')
 
@@ -27,7 +27,7 @@ for y in range (12):
 
     time.sleep(0.25)
 
-time.sleep(60)
+time.sleep(50)
 
 
 
