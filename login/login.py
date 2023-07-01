@@ -24,6 +24,11 @@ browser.get('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
 # Waiting for 3 seconds (for pages to load up)
 time.sleep(3)
 
+# ---------------------------------------------------- FIRST TEST - FAILED LOGIN ----------------------------------------------------------------------------- #
+
+# Log the test step and result
+logging.info('INPUTTING THE WRONG CREDENTIALS')
+
 # Input wrong credentials to see its fail - Find element by NAME
 browser.find_element(By.NAME, "username").send_keys(email1)
 browser.find_element(By.NAME, "password").send_keys(password1)
@@ -43,3 +48,9 @@ print('FIRST TEST .... SUCCESS - FAILED LOGIN')
 
 # Log the test step and result
 logging.info('FIRST TEST .... SUCCESS - FAILED LOGIN')
+
+# ---------------------------------------------------- SECOND TEST - SUCCESSFUL LOGIN ----------------------------------------------------------------------------- #
+
+# Input the correct credentials to see its pass - Find element by NAME
+browser.find_element(By.NAME, "username").send_keys(email)
+browser.find_element(By.NAME, "password").send_keys(password)
