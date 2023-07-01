@@ -78,3 +78,6 @@ logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
 time.sleep(5)
 
+# Close the WebDriver
+browser.quit()
+
