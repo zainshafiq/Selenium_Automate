@@ -22,7 +22,7 @@ browser.maximize_window()
 browser.get('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
 # Waiting for 3 seconds (for pages to load up)
-time.sleep(3)
+time.sleep(5)
 
 # ---------------------------------------------------- FIRST TEST - FAILED LOGIN ----------------------------------------------------------------------------- #
 
@@ -52,7 +52,10 @@ logging.info('FIRST TEST .... SUCCESS - FAILED LOGIN')
 # ---------------------------------------------------- SECOND TEST - SUCCESSFUL LOGIN ----------------------------------------------------------------------------- #
 
 # Refresh the page
-browser.navigate().refresh()
+browser.refresh()
+
+# Waiting for 5 seconds (for pages to refresh)
+time.sleep(5)
 
 # Log the test step of inputting the correct credentials
 logging.info('INPUTTING THE CORRECT CREDENTIALS')
@@ -72,4 +75,6 @@ print('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
 # Log the test step and result
 logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+
+time.sleep(5)
 
