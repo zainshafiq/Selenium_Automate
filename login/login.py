@@ -17,7 +17,7 @@ browser.get('https://the-internet.herokuapp.com/')
 time.sleep(3)
 
 # Find element by "link text"
-browser.find_element(By.LINK_TEXT, "Digest Authentication")
+browser.find_element(By.LINK_TEXT, "Digest Authentication").click()
 
 # Find element by "partial link text"
 # browser.find_element(By.PARTIAL_LINK_TEXT, "Auth").click()
