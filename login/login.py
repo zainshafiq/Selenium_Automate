@@ -26,7 +26,7 @@ time.sleep(3)
 
 # ---------------------------------------------------- FIRST TEST - FAILED LOGIN ----------------------------------------------------------------------------- #
 
-# Log the test step and result
+# Log the test step of inputting the wrong credentials
 logging.info('INPUTTING THE WRONG CREDENTIALS')
 
 # Input wrong credentials to see its fail - Find element by NAME
@@ -51,6 +51,25 @@ logging.info('FIRST TEST .... SUCCESS - FAILED LOGIN')
 
 # ---------------------------------------------------- SECOND TEST - SUCCESSFUL LOGIN ----------------------------------------------------------------------------- #
 
+# Refresh the page
+browser.navigate().refresh()
+
+# Log the test step of inputting the correct credentials
+logging.info('INPUTTING THE CORRECT CREDENTIALS')
+
 # Input the correct credentials to see its pass - Find element by NAME
 browser.find_element(By.NAME, "username").send_keys(email)
 browser.find_element(By.NAME, "password").send_keys(password)
+
+# Click login - Find element by XPATH
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
+
+time.sleep(5)
+
+# Take a screenshot
+browser.save_screenshot("success_Login.png")
+print('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+
+# Log the test step and result
+logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+
