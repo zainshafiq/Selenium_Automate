@@ -28,7 +28,18 @@ time.sleep(3)
 browser.find_element(By.NAME, "username").send_keys(email1)
 browser.find_element(By.NAME, "password").send_keys(password1)
 
-# Click login - Find element by LINK TEXT
-browser.find_element(By.LINK_TEXT, "login").click()
+time.sleep(2)
+
+# Click login - Find element by XPATH
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
 
 time.sleep(2)
+
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]').screenshot('fail_Alert.png')
+
+# Take a screenshot
+browser.save_screenshot("fail_Login.png")
+print('FIRST TEST .... SUCCESS - FAILED LOGIN')
+
+# Log the test step and result
+logging.info('FIRST TEST .... SUCCESS - FAILED LOGIN')
