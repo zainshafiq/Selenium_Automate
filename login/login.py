@@ -79,5 +79,12 @@ logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 time.sleep(5)
 
 # Close the WebDriver
-browser.quit()
+# browser.quit()
 
+# ---------------------------------------------------- THIRD TEST - LOGOUT AND FORGOT ----------------------------------------------------------------------------- #
+
+# Click profile, dropdown menu
+browser.find_element(By.CLASS_NAME, "oxd-userdropdown-tab").click()
+
+# Logout and back to login page
+browser.find_element(By.ROLE, "menuitem").click()
