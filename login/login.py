@@ -27,7 +27,7 @@ time.sleep(5)
 # ---------------------------------------------------- FIRST TEST - FAILED LOGIN ----------------------------------------------------------------------------- #
 
 # Log the test step of inputting the wrong credentials
-logging.info('INPUTTING THE WRONG CREDENTIALS')
+logging.info('INITIATE FIRST TEST - INPUTTING THE WRONG CREDENTIALS')
 
 # Input wrong credentials to see its fail - Find element by NAME
 browser.find_element(By.NAME, "username").send_keys(email1)
@@ -58,7 +58,7 @@ browser.refresh()
 time.sleep(5)
 
 # Log the test step of inputting the correct credentials
-logging.info('INPUTTING THE CORRECT CREDENTIALS')
+logging.info('INITIATE SECOND TEST - INPUTTING THE CORRECT CREDENTIALS')
 
 # Input the correct credentials to see its pass - Find element by NAME
 browser.find_element(By.NAME, "username").send_keys(email)
@@ -84,7 +84,14 @@ time.sleep(5)
 # ---------------------------------------------------- THIRD TEST - LOGOUT AND FORGOT ----------------------------------------------------------------------------- #
 
 # Click profile, dropdown menu
-browser.find_element(By.CLASS_NAME, "oxd-userdropdown-tab").click()
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span').click()
+
+time.sleep(5)
 
 # Logout and back to login page
-browser.find_element(By.ROLE, "menuitem").click()
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
+
+# Log the test step of inputting the correct credentials
+logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
+
+time.sleep(5)
