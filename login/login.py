@@ -99,4 +99,9 @@ browser.refresh()
 
 browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot-header').click()
 
+time.sleep(3)
+
+# Fill up a non existing username
+browser.find_element(By.NAME, 'username').send_keys('Random')
+
 time.sleep(5)
