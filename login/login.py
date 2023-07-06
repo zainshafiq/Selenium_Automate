@@ -102,6 +102,11 @@ browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot
 time.sleep(3)
 
 # Fill up a non existing username
-browser.find_element(By.NAME, 'username').send_keys('Random')
+# browser.find_element(By.NAME, 'username').send_keys('Random')
+
+# Click the cancel button to see its functionality and back to login page
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/form/div[2]/button[1]').click()
+
+time.sleep(3)
 
 time.sleep(5)
