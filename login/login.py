@@ -97,6 +97,7 @@ logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
 # Refresh the page
 browser.refresh()
 
+# Click the forgot password button to go to reset password option
 browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot-header').click()
 
 time.sleep(3)
@@ -108,5 +109,8 @@ time.sleep(3)
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/form/div[2]/button[1]').click()
 
 time.sleep(3)
+
+# Click the forgot password button to go to reset password option
+browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot-header').click()
 
 time.sleep(5)
