@@ -94,4 +94,9 @@ browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2
 # Log the test step of inputting the correct credentials
 logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
 
+# Refresh the page
+browser.refresh()
+
+browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot-header').click()
+
 time.sleep(5)
