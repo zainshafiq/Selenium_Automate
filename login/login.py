@@ -131,7 +131,8 @@ browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/form/div[2]/but
 time.sleep(5)
 
 # Take a screenshot
-browser.save_screenshot("success_Login.png")
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div').screenshot('reset_Notice.png')
+browser.save_screenshot("success_Reset.png")
 print('THIRD TEST .... SUCCESS - SUCCESSFUL RESET PASSWORD')
 
 # Log the test step and result
