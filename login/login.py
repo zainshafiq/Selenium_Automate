@@ -76,12 +76,12 @@ time.sleep(5)
 # # Log the test step and result
 # logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
-# time.sleep(5)
+time.sleep(5)
 
 # ---------------------------------------------------- THIRD TEST - LOGOUT AND FORGOT ----------------------------------------------------------------------------- #
 
 # Click profile, dropdown menu
-browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span').click()
+browser.find_element(By.LINK_TEXT, 'Forgot your password?').click()
 
 time.sleep(5)
 
