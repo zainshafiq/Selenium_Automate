@@ -76,26 +76,29 @@ time.sleep(5)
 # # Log the test step and result
 # logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
-time.sleep(5)
+# time.sleep(5)
+
+# Close the WebDriver
+# browser.quit()
 
 # ---------------------------------------------------- THIRD TEST - LOGOUT AND FORGOT ----------------------------------------------------------------------------- #
 
-# Click profile, dropdown menu
-browser.find_element(By.LINK_TEXT, 'Forgot your password?').click()
+# # Click profile, dropdown menu
+# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span').click()
 
-time.sleep(5)
+# time.sleep(5)
 
-# Logout and back to login page
-browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
+# # Logout and back to login page
+# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
 
 # Log the test step of inputting the correct credentials
 logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
 
 # Refresh the page
-browser.refresh()
+# browser.refresh()
 
 # Click the forgot password button to go to reset password option
-browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p').click()
+browser.find_element(By.PARTIAL_LINK_TEXT, 'Forgot').click()
 
 time.sleep(3)
 
@@ -113,4 +116,4 @@ browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot
 time.sleep(5)
 
 # Close the WebDriver
-browser.quit()
+# browser.quit()
