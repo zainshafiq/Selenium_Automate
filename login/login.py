@@ -57,29 +57,26 @@ time.sleep(5)
 # # Waiting for 5 seconds (for pages to refresh)
 # time.sleep(5)
 
-# Log the test step of inputting the correct credentials
-logging.info('INITIATE SECOND TEST - INPUTTING THE CORRECT CREDENTIALS')
+# # Log the test step of inputting the correct credentials
+# logging.info('INITIATE SECOND TEST - INPUTTING THE CORRECT CREDENTIALS')
 
-# Input the correct credentials to see its pass - Find element by NAME
-browser.find_element(By.NAME, "username").send_keys(email)
-browser.find_element(By.NAME, "password").send_keys(password)
+# # Input the correct credentials to see its pass - Find element by NAME
+# browser.find_element(By.NAME, "username").send_keys(email)
+# browser.find_element(By.NAME, "password").send_keys(password)
 
-# Click login - Find element by XPATH
-browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
+# # Click login - Find element by XPATH
+# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
 
-time.sleep(5)
+# time.sleep(5)
 
-# Take a screenshot
-browser.save_screenshot("success_Login.png")
-print('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+# # Take a screenshot
+# browser.save_screenshot("success_Login.png")
+# print('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
-# Log the test step and result
-logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+# # Log the test step and result
+# logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
-time.sleep(5)
-
-# Close the WebDriver
-# browser.quit()
+# time.sleep(5)
 
 # ---------------------------------------------------- THIRD TEST - LOGOUT AND FORGOT ----------------------------------------------------------------------------- #
 
@@ -98,7 +95,7 @@ logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
 browser.refresh()
 
 # Click the forgot password button to go to reset password option
-browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot-header').click()
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p').click()
 
 time.sleep(3)
 
