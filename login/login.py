@@ -4,11 +4,11 @@ from selenium.webdriver.common.by import By
 import time
 
 # Admin credentials
-email = "Admin"
+username = "Admin"
 password = "admin123"
 
 # Fail Admin credential
-email1 = "admin1"
+username1 = "admin1"
 password1 = "password1"
 
 # Set up logging
@@ -30,7 +30,7 @@ time.sleep(5)
 # logging.info('INITIATE FIRST TEST - INPUTTING THE WRONG CREDENTIALS')
 
 # # Input wrong credentials to see its fail - Find element by NAME
-# browser.find_element(By.NAME, "username").send_keys(email1)
+# browser.find_element(By.NAME, "username").send_keys(username1)
 # browser.find_element(By.NAME, "password").send_keys(password1)
 
 # time.sleep(2)
@@ -61,10 +61,13 @@ time.sleep(5)
 # logging.info('INITIATE SECOND TEST - INPUTTING THE CORRECT CREDENTIALS')
 
 # # Input the correct credentials to see its pass - Find element by NAME
-# browser.find_element(By.NAME, "username").send_keys(email)
+# logging.info('INPUTTING USERNAME')
+# browser.find_element(By.NAME, "username").send_keys(username)
+# logging.info('INPUTTING PASSWORD')
 # browser.find_element(By.NAME, "password").send_keys(password)
 
 # # Click login - Find element by XPATH
+# logging.info('CLICKING THE LOGIN BUTTON')
 # browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
 
 # time.sleep(5)
@@ -98,27 +101,43 @@ logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
 # browser.refresh()
 
 # Click the forgot password button to go to reset password option
+logging.info('CLICKING THE FORGOT PASSWORD OPTION')
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p').click()
 
 time.sleep(3)
 
 # Click the cancel button to see its functionality and back to login page
+logging.info('CLICKING THE CANCEL BUTTON AND BACK TO LOGIN PAGE')
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/form/div[2]/button[1]').click()
 
 time.sleep(3)
 
 # Click the forgot password button to go to reset password option
+logging.info('CLICKING THE FORGOT PASSWORD OPTION (2nd)')
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p').click()
 
 time.sleep(3)
 
-# Fill up a non existing username
-browser.find_element(By.NAME, 'username').send_keys('MR_Random')
+# Fill up a username
+logging.info('FILLING UP THE USERNAME TO RESET')
+browser.find_element(By.NAME, 'username').send_keys('Mr_Random')
+
+time.sleep(3)
 
 # Click the reset password button
+logging.info('CLICKING THE RESET PASSWORD')
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/form/div[2]/button[2]').click()
 
 time.sleep(5)
 
+# Take a screenshot
+browser.save_screenshot("success_Login.png")
+print('THIRD TEST .... SUCCESS - SUCCESSFUL RESET PASSWORD')
+
+# Log the test step and result
+logging.info('THIRD TEST .... SUCCESS - SUCCESSFUL RESET PASSWORD')
+
+time.sleep(5)
+
 # Close the WebDriver
-# browser.quit()
+browser.quit()
