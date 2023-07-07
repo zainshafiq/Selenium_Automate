@@ -110,13 +110,15 @@ time.sleep(3)
 # Click the forgot password button to go to reset password option
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p').click()
 
+time.sleep(3)
+
 # Fill up a non existing username
 browser.find_element(By.NAME, 'username').send_keys('MR_Random')
 
 # Click the reset password button
-browser.find_element(By.LINK_TEXT, ' Reset Password ').click()
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/form/div[2]/button[2]').click()
 
-time.sleep(3)
+time.sleep(5)
 
 # Close the WebDriver
 # browser.quit()
