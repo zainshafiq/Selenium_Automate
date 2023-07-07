@@ -102,18 +102,21 @@ browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[
 
 time.sleep(3)
 
-# Fill up a non existing username
-# browser.find_element(By.NAME, 'username').send_keys('Random')
-
 # Click the cancel button to see its functionality and back to login page
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/div/form/div[2]/button[1]').click()
 
 time.sleep(3)
 
 # Click the forgot password button to go to reset password option
-browser.find_element(By.CLASS_NAME, 'oxd-text oxd-text--p orangehrm-login-forgot-header').click()
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p').click()
 
-time.sleep(5)
+# Fill up a non existing username
+browser.find_element(By.NAME, 'username').send_keys('MR_Random')
+
+# Click the reset password button
+browser.find_element(By.LINK_TEXT, ' Reset Password ').click()
+
+time.sleep(3)
 
 # Close the WebDriver
 # browser.quit()
