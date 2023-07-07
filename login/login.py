@@ -98,7 +98,7 @@ logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
 # browser.refresh()
 
 # Click the forgot password button to go to reset password option
-browser.find_element(By.PARTIAL_LINK_TEXT, 'Forgot').click()
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p').click()
 
 time.sleep(3)
 
