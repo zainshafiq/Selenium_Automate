@@ -26,73 +26,70 @@ time.sleep(5)
 
 # ---------------------------------------------------- FIRST TEST - FAILED LOGIN ----------------------------------------------------------------------------- #
 
-# # Log the test step of inputting the wrong credentials
-# logging.info('INITIATE FIRST TEST - INPUTTING THE WRONG CREDENTIALS')
+# Log the test step of inputting the wrong credentials
+logging.info('INITIATE FIRST TEST - INPUTTING THE WRONG CREDENTIALS')
 
-# # Input wrong credentials to see its fail - Find element by NAME
-# browser.find_element(By.NAME, "username").send_keys(username1)
-# browser.find_element(By.NAME, "password").send_keys(password1)
+# Input wrong credentials to see its fail - Find element by NAME
+browser.find_element(By.NAME, "username").send_keys(username1)
+browser.find_element(By.NAME, "password").send_keys(password1)
 
-# time.sleep(2)
+time.sleep(2)
 
-# # Click login - Find element by XPATH
-# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
+# Click login - Find element by XPATH
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
 
-# time.sleep(2)
+time.sleep(2)
 
-# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]').screenshot('fail_Alert.png')
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]').screenshot('fail_Alert.png')
 
-# # Take a screenshot
-# browser.save_screenshot("fail_Login.png")
-# print('FIRST TEST .... SUCCESS - FAILED LOGIN')
+# Take a screenshot
+browser.save_screenshot("fail_Login.png")
+print('FIRST TEST .... SUCCESS - FAILED LOGIN')
 
-# # Log the test step and result
-# logging.info('FIRST TEST .... SUCCESS - FAILED LOGIN')
+# Log the test step and result
+logging.info('FIRST TEST .... SUCCESS - FAILED LOGIN')
 
 # ---------------------------------------------------- SECOND TEST - SUCCESSFUL LOGIN ----------------------------------------------------------------------------- #
 
-# # Refresh the page
-# browser.refresh()
+# Refresh the page
+browser.refresh()
 
-# # Waiting for 5 seconds (for pages to refresh)
-# time.sleep(5)
+# Waiting for 5 seconds (for pages to refresh)
+time.sleep(5)
 
-# # Log the test step of inputting the correct credentials
-# logging.info('INITIATE SECOND TEST - INPUTTING THE CORRECT CREDENTIALS')
+# Log the test step of inputting the correct credentials
+logging.info('INITIATE SECOND TEST - INPUTTING THE CORRECT CREDENTIALS')
 
-# # Input the correct credentials to see its pass - Find element by NAME
-# logging.info('INPUTTING USERNAME')
-# browser.find_element(By.NAME, "username").send_keys(username)
-# logging.info('INPUTTING PASSWORD')
-# browser.find_element(By.NAME, "password").send_keys(password)
+# Input the correct credentials to see its pass - Find element by NAME
+logging.info('INPUTTING USERNAME')
+browser.find_element(By.NAME, "username").send_keys(username)
+logging.info('INPUTTING PASSWORD')
+browser.find_element(By.NAME, "password").send_keys(password)
 
-# # Click login - Find element by XPATH
-# logging.info('CLICKING THE LOGIN BUTTON')
-# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
+# Click login - Find element by XPATH
+logging.info('CLICKING THE LOGIN BUTTON')
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
 
-# time.sleep(5)
+time.sleep(5)
 
-# # Take a screenshot
-# browser.save_screenshot("success_Login.png")
-# print('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+# Take a screenshot
+browser.save_screenshot("success_Login.png")
+print('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
-# # Log the test step and result
-# logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+# Log the test step and result
+logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
-# time.sleep(5)
-
-# Close the WebDriver
-# browser.quit()
+time.sleep(5)
 
 # ---------------------------------------------------- THIRD TEST - LOGOUT AND FORGOT ----------------------------------------------------------------------------- #
 
-# # Click profile, dropdown menu
-# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span').click()
+# Click profile, dropdown menu
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span').click()
 
-# time.sleep(5)
+time.sleep(5)
 
-# # Logout and back to login page
-# browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
+# Logout and back to login page
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
 
 # Log the test step of inputting the correct credentials
 logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
