@@ -19,6 +19,7 @@ browser = webdriver.Chrome()
 # Maximize the window
 browser.maximize_window()
 
+# Use orangeHRM demo website
 browser.get('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
 # Waiting for 3 seconds (for pages to load up)
@@ -86,7 +87,7 @@ time.sleep(5)
 # Click profile, dropdown menu
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span').click()
 
-time.sleep(5)
+time.sleep(3)
 
 # Logout and back to login page
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
