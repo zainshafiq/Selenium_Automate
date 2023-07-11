@@ -95,7 +95,9 @@ browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2
 logging.info('INITIATE THIRD TEST - FORGOT CREDENTIALS')
 
 # Refresh the page
-# browser.refresh()
+browser.refresh()
+
+time.sleep(5)
 
 # Click the forgot password button to go to reset password option
 logging.info('CLICKING THE FORGOT PASSWORD OPTION')
