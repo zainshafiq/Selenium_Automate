@@ -51,17 +51,20 @@ python login.py
 ```
 
 4. The script will perform the login process and generate the following files in the project directory:
-
 - `fail_Alert.png`: Captured screenshot of the alert that displayed the login failure.
 - `fail_Login.png`: Captured screenshot of the login attempt fails.
 - `success_Login.png`: Captured screenshot of the successful login.
 
-5. 
+5. Logging: 
+- The script utilizes the logging module to record the test steps and results. The logs are saved in a file named `this_REPORT.txt`.
+
+6. Disclaimer:
+- Use this script responsibly and in accordance with the terms of use of the application you are testing.
 
 ## Configuration
 
 - To use a different browser, modify the WebDriver initialization in the script (`webdriver.Chrome()` for Chrome, `webdriver.Firefox()` for Firefox, etc.).
-
+- Make sure to replace the `https://opensource-demo.orangehrmlive.com/web/index.php/auth/login` URL with the appropriate URL for your application.
 - If you want to change the location or name of the generated files, update the corresponding file paths and names in the script.
 
 ## Troubleshooting
