@@ -43,8 +43,8 @@ pip install selenium
 
 1. Open the `login.py` file in your preferred text editor.
 
-2. Modify the `USERNAME` and `PASSWORD` variables with your login credentials.
-
+2. Update the `username`, `password`, `username1`, and `password1` variables with the appropriate credentials for your testing environment.
+   
 3. Run the script:
 ```
 python login.py
