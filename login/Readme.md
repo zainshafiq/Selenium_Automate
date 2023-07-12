@@ -23,7 +23,7 @@ pip install selenium
 
 ## Test Scenarios
 
-### 1. Failed Login:
+#### 1. Failed Login:
   - Inputs wrong credentials.
   - Verifies the failed login alert and takes a screenshot.
 
