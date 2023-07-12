@@ -22,21 +22,21 @@ pip install selenium
 3. Download the appropriate WebDriver executable for your browser (e.g., ChromeDriver) and ensure it is accessible in your system's PATH.
 
 ## Test Scenarios
-### Failed Login:
-- Inputs wrong credentials.
-- Verifies the failed login alert and takes a screenshot.
+1. Failed Login:
+  - Inputs wrong credentials.
+  - Verifies the failed login alert and takes a screenshot.
 
-### Successful Login:
-- Inputs correct credentials.
-- Verifies the successful login and takes a screenshot.
+2. Successful Login:
+  - Inputs correct credentials.
+  - Verifies the successful login and takes a screenshot.
 
-### Logout and Forgot Password:
-- Logs out from the system.
-- Clicks on the forgot password option.
-- Verifies the functionality of the cancel button and takes a screenshot.
-- Clicks on the forgot password option again.
-- Fills up the username to reset and clicks on the reset password button.
-- Verifies the successful password reset notice and takes a screenshot.
+3. Logout and Forgot Password:
+  - Logs out from the system.
+  - Clicks on the forgot password option.
+  - Verifies the functionality of the cancel button and takes a screenshot.
+  - Clicks on the forgot password option again.
+  - Fills up the username to reset and clicks on the reset password button.
+  - Verifies the successful password reset notice and takes a screenshot.
 
 ## Usage
 
