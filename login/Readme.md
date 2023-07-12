@@ -55,7 +55,8 @@ python login.py
 - `fail_Alert.png`: Captured screenshot of the alert that displayed the login failure.
 - `fail_Login.png`: Captured screenshot of the login attempt fails.
 - `success_Login.png`: Captured screenshot of the successful login.
-- `this_REPORT.txt`: Log file containing relevant information about the login process.
+
+5. 
 
 ## Configuration
 
