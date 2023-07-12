@@ -21,12 +21,30 @@ pip install selenium
 
 3. Download the appropriate WebDriver executable for your browser (e.g., ChromeDriver) and ensure it is accessible in your system's PATH.
 
+## Test Scenarios
+
+#### 1. Failed Login:
+  - Inputs wrong credentials.
+  - Verifies the failed login alert and takes a screenshot.
+
+#### 2. Successful Login:
+  - Inputs correct credentials.
+  - Verifies the successful login and takes a screenshot.
+
+#### 3. Logout and Forgot Password:
+  - Logs out from the system.
+  - Clicks on the forgot password option.
+  - Verifies the functionality of the cancel button and takes a screenshot.
+  - Clicks on the forgot password option again.
+  - Fills up the username to reset and clicks on the reset password button.
+  - Verifies the successful password reset notice and takes a screenshot.
+
 ## Usage
 
 1. Open the `login.py` file in your preferred text editor.
 
-2. Modify the `USERNAME` and `PASSWORD` variables with your login credentials.
-
+2. Update the `username`, `password`, `username1`, and `password1` variables with the appropriate credentials for your testing environment.
+   
 3. Run the script:
 ```
 python login.py
@@ -37,7 +55,8 @@ python login.py
 - `fail_Alert.png`: Captured screenshot of the alert that displayed the login failure.
 - `fail_Login.png`: Captured screenshot of the login attempt fails.
 - `success_Login.png`: Captured screenshot of the successful login.
-- `this_REPORT.txt`: Log file containing relevant information about the login process.
+
+5. 
 
 ## Configuration
 
