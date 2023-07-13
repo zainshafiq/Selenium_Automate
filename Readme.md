@@ -1,6 +1,6 @@
 # Selenium WebDriver Readme
 
-Welcome to the Selenium WebDriver Readme! This document is designed to help you learn and upskill yourself as a test engineer using Selenium WebDriver. Whether you're new to Selenium or looking to enhance your skills, this readme will provide you with the necessary information to get started and excel in your test automation journey.
+This document is designed to help you learn and upskill yourself as a test engineer using Selenium WebDriver. Whether you're new to Selenium or looking to enhance your skills, this readme will provide you with the necessary information to get started and excel in your test automation journey.
 
 ## Introduction to Selenium WebDriver
 
