@@ -62,5 +62,7 @@ browser.find_element(By.NAME, "firstName").send_keys('Ishraf')
 browser.find_element(By.NAME, "middleName").send_keys('Zainuddin')
 browser.find_element(By.NAME, "lastName").send_keys('Zainuddin')
 
+time.sleep(3)
+
 # Close the WebDriver
 browser.quit()
