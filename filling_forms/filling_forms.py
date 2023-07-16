@@ -45,6 +45,17 @@ print('FIRST TEST .... SUCCESS - SUCCESSFUL LOGIN')
 # Log the test step and result
 logging.info('FIRST TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
+time.sleep(3)
+
+# ---------------------------------------------------- SECOND TEST - FILLING UP FIRST FORM ----------------------------------------------------------------------------- #
+
+# Log the test step of inputting the correct credentials
+logging.info('INITIATE SECOND TEST - SUCCESSFULL LOGIN')
+
+# Click My Info - Find element by XPATH
+logging.info('CLICKING THE MY INFO OPTION BUTTON')
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[6]/a').click()
+
 time.sleep(5)
 
 # Close the WebDriver
