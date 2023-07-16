@@ -68,7 +68,7 @@ time.sleep(3)
 logging.info('CLICKING THE MY SAVE BUTTON')
 browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button').click()
 
-
+time.sleep(5)
 
 # Close the WebDriver
 browser.quit()
