@@ -64,5 +64,11 @@ browser.find_element(By.NAME, "lastName").send_keys('Zainuddin')
 
 time.sleep(3)
 
+# Click Save - Find element by XPATH
+logging.info('CLICKING THE MY SAVE BUTTON')
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button').click()
+
+
+
 # Close the WebDriver
 browser.quit()
