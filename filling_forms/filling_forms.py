@@ -58,8 +58,17 @@ browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul
 
 time.sleep(5)
 
-browser.find_element(By.NAME, "firstame").send_keys('Ishraf')
+browser.find_element(By.NAME, "firstName").send_keys('Ishraf')
+browser.find_element(By.NAME, "middleName").send_keys('Zainuddin')
 browser.find_element(By.NAME, "lastName").send_keys('Zainuddin')
+
+time.sleep(3)
+
+# Click Save - Find element by XPATH
+logging.info('CLICKING THE MY SAVE BUTTON')
+browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button').click()
+
+time.sleep(5)
 
 # Close the WebDriver
 browser.quit()
