@@ -3,6 +3,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
+# Admin credentials
+username = "Admin"
+password = "admin123"
+
 # Set up logging
 logging.basicConfig(filename='this_REPORT_filling_forms.txt', level=logging.INFO, format='%(asctime)s - %(message)s')
 
@@ -36,10 +40,10 @@ time.sleep(5)
 
 # Take a screenshot
 browser.save_screenshot("success_Login.png")
-print('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+print('FIRST TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
 # Log the test step and result
-logging.info('SECOND TEST .... SUCCESS - SUCCESSFUL LOGIN')
+logging.info('FIRST TEST .... SUCCESS - SUCCESSFUL LOGIN')
 
 time.sleep(5)
 
