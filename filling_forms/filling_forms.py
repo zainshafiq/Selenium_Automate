@@ -59,7 +59,7 @@ browser.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul
 time.sleep(5)
 
 browser.find_element(By.NAME, "firstName").send_keys('Ishraf')
-browbrowser.find_element(By.NAME, "middleName").send_keys('Zainuddin')
+browser.find_element(By.NAME, "middleName").send_keys('Zainuddin')
 browser.find_element(By.NAME, "lastName").send_keys('Zainuddin')
 
 # Close the WebDriver
