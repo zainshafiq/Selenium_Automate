@@ -1,10 +1,12 @@
 **Automated Form Filling using Selenium**
+
 <br>
 <p align="start">
   <a href="https://app.daily.dev/zainshafiq"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/2560px-Selenium_logo.svg.png" width="600" alt="Selenium"/></a>
   </a>
 </p>
 <br>
+
 ## Introduction
 
 This project demonstrates how to automate the process of filling up web forms using Selenium, a popular web browser automation tool. With Selenium, you can simulate user interactions on web pages and efficiently input data into web forms.
