@@ -1,5 +1,11 @@
 # Selenium WebDriver Readme
 
+<br>
+<p align="start">
+  <a href="https://app.daily.dev/zainshafiq"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/2560px-Selenium_logo.svg.png" width="800" alt="Selenium"/></a>
+  </a>
+</p>
+
 This document is designed to help you learn and upskill yourself as a test engineer using Selenium WebDriver. Whether you're new to Selenium or looking to enhance your skills, this readme will provide you with the necessary information to get started and excel in your test automation journey.
 
 ## Introduction to Selenium WebDriver
