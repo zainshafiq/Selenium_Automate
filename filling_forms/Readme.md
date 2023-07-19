@@ -1,7 +1,7 @@
 **Automated Form Filling using Selenium**
 
 <p align="center">
-  <a href="https://app.daily.dev/zainshafiq"><img src="[https://api.daily.dev/devcards/b9e6c0aa829d4a668494363a2c111e69.png?r=jrv](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/2560px-Selenium_logo.svg.png)" width="300" alt="Selenium"/></a>
+  <a href="https://app.daily.dev/zainshafiq"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/2560px-Selenium_logo.svg.png" width="300" alt="Selenium"/></a>
   </a>
 </p>
 
