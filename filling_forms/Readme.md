@@ -1,6 +1,6 @@
 **Automated Form Filling using Selenium**
 
-<div align='center' width='300'>
+<div align='center'>
   ![Selenium Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/2560px-Selenium_logo.svg.png)
 </div>
 
