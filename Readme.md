@@ -1,7 +1,7 @@
 # Selenium WebDriver Readme
 
 <br>
-<p align="start">
+<p align="center">
   <a href="https://app.daily.dev/zainshafiq"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Selenium_logo.svg/2560px-Selenium_logo.svg.png" width="600" alt="Selenium"/></a>
   </a>
 </p>
